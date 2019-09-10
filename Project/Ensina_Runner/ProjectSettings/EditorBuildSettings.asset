@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: f42d7e5445839d047bb51f4df6bdf0cb
+  - enabled: 1
+    path: Assets/Scenes/Ensina_Runner.unity
+    guid: cbb05e63218ae9749a9eac329de7087b
   m_configObjects: {}

@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackgroundScroll.cs" />
     <Compile Include="Assets\Scripts\DistanceManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/PC/Documents/GitHub/EnsinaRunnerFacul/Project/Ensina_Runner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

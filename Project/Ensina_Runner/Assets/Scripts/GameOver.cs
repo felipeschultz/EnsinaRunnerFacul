@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    void OnCollision(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "BoxTeste")
         {
@@ -13,6 +13,6 @@ public class GameOver : MonoBehaviour
 
     void RestartGame()
     {
-        SceneManager.LoadScene("Quiz");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

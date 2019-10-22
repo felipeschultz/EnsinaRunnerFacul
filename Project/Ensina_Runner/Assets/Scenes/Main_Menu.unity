@@ -920,6 +920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartGameLevel: Ensina_Runner
+  nickName: 
 --- !u!1 &1201560866
 GameObject:
   m_ObjectHideFlags: 0

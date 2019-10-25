@@ -10,7 +10,6 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string StartGameLevel;
-    public string nickName;
 
     // Método para o Botão <Start>
     public void StartGame()
@@ -30,13 +29,5 @@ public class MainMenu : MonoBehaviour
     public void SairGame()
     {
         Application.Quit();
-    }
-
-    public void ValidateNickName()
-    {
-        if (string.IsNullOrEmpty(nickName))
-        {
-            Debug.Log("Error name");
-        }
     }
 }

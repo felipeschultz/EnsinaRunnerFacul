@@ -4,14 +4,19 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public DatabaseConnection myDB;
-    public int tema;
     public GameObject perguntaPrefab;
+    public int temaSelecionado;
     public List<string> listaDePerguntas;
+
+    public void Awake()
+    {
+        temaSelecionado = SelectTheme.themeValue;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        myDB.ExecuteQuery("SELECT * FROM Perguntas WHERE ID_Temas = " + tema);
+        myDB.ExecuteQuery("SELECT * FROM Perguntas WHERE FK_ID_Temas = " + temaSelecionado);
     }
 
     // Update is called once per frame

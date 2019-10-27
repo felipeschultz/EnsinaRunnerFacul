@@ -5,7 +5,6 @@ public class ObstacleMovement : MonoBehaviour
     public float moveObstacle = -3f;
     private Rigidbody2D myRB;
 
-
     // Start is called before the first frame update
     void Start()
     {

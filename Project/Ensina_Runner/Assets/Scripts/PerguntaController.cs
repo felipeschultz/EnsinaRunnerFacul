@@ -22,11 +22,11 @@ public class PerguntaController : MonoBehaviour
 
     private void PauseGame()
     {
-        // Lógica de Pausar
+        Time.timeScale = 0f;
     }
 
     private void ResumeGame()
     {
-        // no stop
+        Time.timeScale = 1f;
     }
 }

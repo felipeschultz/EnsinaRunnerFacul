@@ -435,14 +435,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myDB: {fileID: 519420033}
-  tema: 0
   perguntaPrefab: {fileID: 7824455559367696530, guid: 2827e84af244f334990493682e63ca49,
     type: 3}
+  temaSelecionado: 0
   listaDePerguntas:
-  - OLAA
-  - AKSMDKASM
-  - TESTE
-  - JAO
+  - "Quanto \xE9 2 + 2?"
+  - "Qual \xE9 a diferen\xE7a de 5 para 10?"
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

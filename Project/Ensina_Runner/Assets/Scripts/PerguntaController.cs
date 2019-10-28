@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class PerguntaController : MonoBehaviour
 {
     public Text textoDaPergunta;
+    public List<ToggleController> toggleController;
 
     void Start()
     {
@@ -28,5 +30,10 @@ public class PerguntaController : MonoBehaviour
     private void ResumeGame()
     {
         Time.timeScale = 1f;
+    }
+
+    public void CreateAnswer(int index, string text, bool isCorrect)
+    {
+        toggleController[index].SetAnswer(text, isCorrect);
     }
 }

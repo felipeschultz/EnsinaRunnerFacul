@@ -7,14 +7,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : EnsinaRunnerController
 {
-    public string StartGameLevel;
+    public string startGameLevel;
 
     // Método para o Botão <Start>
     public void StartGame()
     {
-        SceneManager.LoadScene(StartGameLevel);
+        SceneManager.LoadScene(startGameLevel);
     }
 
     /* Método <Ranking> Não Desenvolvido

@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba547d2846a83344384973f8c2c37d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartGameLevel: Ensina_Runner
+  startGameLevel: Ensina_Runner
 --- !u!114 &1173999496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2484,4 +2484,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myDropdown: {fileID: 2131369454}
-  themeValue: 0

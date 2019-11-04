@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOver : MonoBehaviour
+public class GameOver : EnsinaRunnerController
 {
     void OnCollisionEnter2D(Collision2D other)
     {

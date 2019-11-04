@@ -3,7 +3,7 @@ using System.Data;
 using Mono.Data.SqliteClient;
 using UnityEngine;
 
-public class DatabaseConnection : MonoBehaviour
+public class DatabaseConnection : EnsinaRunnerController
 {
     private IDbConnection connection;
     private IDbCommand command;
@@ -43,5 +43,4 @@ public class DatabaseConnection : MonoBehaviour
         command.CommandText = query;
         return command.ExecuteReader();
     }
-
 }

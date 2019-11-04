@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleSpawner : MonoBehaviour
+public class ObstacleSpawner : EnsinaRunnerController
 {
     public GameObject[] obstacles;
     public List<GameObject> obstaclesToSpawn = new List<GameObject>();

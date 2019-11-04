@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ObstacleMovement : MonoBehaviour
+public class ObstacleMovement : EnsinaRunnerController
 {
     public float moveObstacle = -3f;
     private Rigidbody2D myRB;

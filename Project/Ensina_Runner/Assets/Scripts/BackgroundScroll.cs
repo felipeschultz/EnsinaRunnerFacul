@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 
-public class BackgroundScroll : MonoBehaviour
+public class BackgroundScroll : EnsinaRunnerController
 {
     private Material material;
     private Vector2 offset;
-
     public int xVelocity,
                yVelocity;
 

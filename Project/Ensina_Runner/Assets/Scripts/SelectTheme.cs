@@ -1,18 +1,17 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 
-public class SelectTheme : MonoBehaviour
+public class SelectTheme : EnsinaRunnerController
 {
     public Dropdown myDropdown;
     public static int themeValue = 0;
 
     void Update()
     {
-        RetornoTema();
+        ThemeReturn();
     }
 
     // Retorna o int dos temas.
-    public int RetornoTema()
+    public int ThemeReturn()
     {
         switch (myDropdown.value)
         {

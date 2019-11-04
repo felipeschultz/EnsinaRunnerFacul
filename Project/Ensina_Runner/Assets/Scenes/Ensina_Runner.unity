@@ -388,12 +388,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bf37fdc0bee5144af82ba381650d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RespCorrectText: {fileID: 1611323358}
   DistanceText: {fileID: 28447343}
-  RespCorrectCount: 0
   DistanceCount: 0
   PointsPerSeconds: 2.2
-  DistanceIncreasing: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,9 +432,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myDB: {fileID: 519420033}
-  perguntaPrefab: {fileID: 7824455559367696530, guid: 2827e84af244f334990493682e63ca49,
+  questionPrefab: {fileID: 7824455559367696530, guid: 2827e84af244f334990493682e63ca49,
     type: 3}
-  temaSelecionado: 0
+  selectedTheme: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -506,6 +503,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b49e0c202388a045b908108bbbe5002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &808985578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 808985579}
+  - component: {fileID: 808985580}
+  m_Layer: 5
+  m_Name: AnswerCorrectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &808985579
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808985578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1425616772}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &808985580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808985578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d217aabdbd784d64dbe53258ba17f74f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrectController: 0
+  textAnswer: {fileID: 0}
+  answerCorrect: {fileID: 1611323358}
+  answerCorrectCount: 0
 --- !u!1 &1302251267
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +568,7 @@ GameObject:
   m_Layer: 0
   m_Name: ObstacleSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -648,6 +697,7 @@ RectTransform:
   - {fileID: 1611323357}
   - {fileID: 28447342}
   - {fileID: 492541003}
+  - {fileID: 808985579}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -897,9 +947,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6302eb4e43c1e1c4b931250f8c624ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 6
-  Grounded: 0
-  WhatIsGround:
+  jumpForce: 6
+  grounded: 0
+  whatIsGround:
     serializedVersion: 2
     m_Bits: 512
 --- !u!114 &1816908482

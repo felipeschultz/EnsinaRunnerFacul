@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ObstacleOffScreen : MonoBehaviour
+public class ObstacleOffScreen : EnsinaRunnerController
 {
     void OnTriggerEnter2D(Collider2D other)
     {

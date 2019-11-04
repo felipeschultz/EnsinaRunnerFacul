@@ -1,20 +1,25 @@
-﻿using System.Net.Mime;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ToggleController : MonoBehaviour
+public class ToggleController : EnsinaRunnerController
 {
-    public bool isCorrect;
-    public Text textAnswer; 
+    public bool isCorrectController;
+    public Text textAnswer;
+    public Text answerCorrect;
+    public int answerCorrectCount;
 
     public void OnSelect(bool change)
     {
-        Debug.Log(isCorrect);
+        if (isCorrectController)
+        {
+            Destroy(GameObject.Find("Perguntas(Clone)"));
+            AnswerController.ResumeGame();
+        }
     }
 
     public void SetAnswer(string answer, bool isCorrect)
     {
-        this.isCorrect = isCorrect;
+        this.isCorrectController = isCorrect;
         textAnswer.text = answer;
     }
 }

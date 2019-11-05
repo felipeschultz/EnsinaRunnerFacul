@@ -932,6 +932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startGameLevel: Ensina_Runner
+  inputNickname: {fileID: 384976713}
 --- !u!114 &1173999496
 MonoBehaviour:
   m_ObjectHideFlags: 0

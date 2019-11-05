@@ -6,15 +6,32 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : EnsinaRunnerController
 {
     public string startGameLevel;
+    public InputField inputNickname;
 
     // Método para o Botão <Start>
     public void StartGame()
     {
-        SceneManager.LoadScene(startGameLevel);
+        if (string.IsNullOrEmpty(inputNickname.text))
+        {
+            SSTools.ShowMessage("Verifique o Nickname!", SSTools.Position.bottom, SSTools.Time.twoSecond);
+
+            return;
+        }
+        if (SelectTheme.themeValue == 0)
+        {
+            SSTools.ShowMessage("Selecione um Tema!", SSTools.Position.bottom, SSTools.Time.twoSecond);
+
+            return;
+        }
+        else
+        {
+            SceneManager.LoadScene(startGameLevel);
+        }
     }
 
     /* Método <Ranking> Não Desenvolvido

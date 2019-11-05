@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\SelectTheme.cs" />
     <Compile Include="Assets\Scripts\ToggleController.cs" />
+    <Compile Include="Assets\SSTools\Scripts\SSTools.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/PC/Documents/GitHub/EnsinaRunnerFacul/Project/Ensina_Runner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

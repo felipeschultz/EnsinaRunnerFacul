@@ -548,13 +548,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 808985578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d217aabdbd784d64dbe53258ba17f74f, type: 3}
+  m_Script: {fileID: 11500000, guid: e1d5435413f3bd146ae3490ad1ed6e47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCorrectController: 0
-  textAnswer: {fileID: 0}
-  answerCorrect: {fileID: 1611323358}
   answerCorrectCount: 0
+  answerIncrementText: {fileID: 1611323358}
 --- !u!1 &1302251267
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,6 +962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4157680d10a5d4caf2e4cfc67c7fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
+    type: 3}
 --- !u!1 &1869200148
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,11 +25,6 @@ public class DatabaseConnection : EnsinaRunnerController
             connection = new SqliteConnection(dbFile);
             command = connection.CreateCommand();
             connection.Open();
-
-            //string testeTable = "CREATE TABLE IF NOT EXISTS TesteJao(id INTEGER PRIMARY KEY AUTOINCREMENT, nomeJao VARCHAR(255) NOT NULL)";
-            //string testeTable = "INSERT INTO TesteJao(id, nomeJao) VALUES(1,'TESTE JOAO')";
-            //command.CommandText = testeTable;
-            //command.ExecuteNonQuery();
         }
         catch (Exception e)
         {

@@ -1,18 +1,19 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameOver : EnsinaRunnerController
 {
-    void OnCollisionEnter2D(Collision2D other)
+    public GameObject postDeathPrefabs;
+
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "BoxTeste")
         {
-            RestartGame();
-        }
-    }
+            AnswerController.PauseGame();
+            GameObject postDeath = GameObject.Instantiate(postDeathPrefabs);
 
-    void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("DISTANCIA: " + DistanceManager.pointsPerSecondsLast);
+            Debug.Log("PERGUNTAS CORRETAS: " + AnswerCorrectManager.answerCorrectCountStatic);
+            Debug.Log("NICKNAME: " + MainMenu.nickname);
+        }
     }
 }

@@ -22,7 +22,7 @@ public class AnswerController : EnsinaRunnerController
         textQuestionController.text = textQuestion;
     }
 
-    private void PauseGame()
+    public static void PauseGame()
     {
         Time.timeScale = 0f;
     }

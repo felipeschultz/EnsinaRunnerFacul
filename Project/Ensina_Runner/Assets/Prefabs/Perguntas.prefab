@@ -260,8 +260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectController: 0
   textAnswer: {fileID: 4885549338114080961}
-  answerCorrect: {fileID: 0}
-  answerCorrectCount: 0
+  postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
+    type: 3}
 --- !u!1 &1810397395712300489
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,8 +373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectController: 0
   textAnswer: {fileID: 1933884876211844637}
-  answerCorrect: {fileID: 0}
-  answerCorrectCount: 0
+  postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
+    type: 3}
 --- !u!1 &2220964283792956913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,5 +1532,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectController: 0
   textAnswer: {fileID: 3045509524769166027}
-  answerCorrect: {fileID: 0}
-  answerCorrectCount: 0
+  postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
+    type: 3}

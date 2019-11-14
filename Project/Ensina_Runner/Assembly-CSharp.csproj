@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AnswerController.cs" />
+    <Compile Include="Assets\Scripts\AnswerCorrectManager.cs" />
     <Compile Include="Assets\Scripts\BackgroundScroll.cs" />
     <Compile Include="Assets\Scripts\DatabaseConnection.cs" />
     <Compile Include="Assets\Scripts\DistanceManager.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\Scripts\ObstacleOffScreen.cs" />
     <Compile Include="Assets\Scripts\ObstacleSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PostDeathMenu.cs" />
     <Compile Include="Assets\Scripts\SelectTheme.cs" />
     <Compile Include="Assets\Scripts\ToggleController.cs" />
     <Compile Include="Assets\SSTools\Scripts\SSTools.cs" />

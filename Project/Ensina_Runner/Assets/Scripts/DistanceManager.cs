@@ -12,16 +12,19 @@ public class DistanceManager : EnsinaRunnerController
 {
     // Instância para Manipular o Texto DistanciaText da UI.
     public Text DistanceText;
-    public float DistanceCount;
-    public float PointsPerSeconds;
-    public static float pointsPerSecondsLast = 0;
+    public float DistanceCount = 0;
+    public float PointsPerSeconds = 0;
+    public static int pointsPerSecondsLast = 0;
 
     // Update is called once per frame
     void Update()
     {
         DistanceCount += PointsPerSeconds * Time.deltaTime;
-        DistanceText.text = "Distância: " + Math.Round(DistanceCount);
 
-        pointsPerSecondsLast = DistanceCount;
+        var testeJao = Math.Round(DistanceCount);
+
+        DistanceText.text = "Distância: " + testeJao;
+
+        pointsPerSecondsLast = (int)testeJao;
     }
 }

@@ -262,6 +262,7 @@ MonoBehaviour:
   textAnswer: {fileID: 4885549338114080961}
   postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
     type: 3}
+  myDB: {fileID: 1203041924}
 --- !u!1 &1810397395712300489
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +376,7 @@ MonoBehaviour:
   textAnswer: {fileID: 1933884876211844637}
   postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
     type: 3}
+  myDB: {fileID: 1203041924}
 --- !u!1 &2220964283792956913
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +934,7 @@ GameObject:
   - component: {fileID: 7824455559367696532}
   - component: {fileID: 7824455559367696533}
   - component: {fileID: 1216570507}
+  - component: {fileID: 1203041924}
   m_Layer: 5
   m_Name: Perguntas
   m_TagString: Untagged
@@ -1040,6 +1043,18 @@ MonoBehaviour:
   - {fileID: 1406977829}
   - {fileID: 1522529073410849441}
   - {fileID: 7829351852342823475}
+--- !u!114 &1203041924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7824455559367696530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b49e0c202388a045b908108bbbe5002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7824455559747969187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,3 +1549,4 @@ MonoBehaviour:
   textAnswer: {fileID: 3045509524769166027}
   postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
     type: 3}
+  myDB: {fileID: 1203041924}

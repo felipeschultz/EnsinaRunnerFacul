@@ -23,7 +23,7 @@ public class DistanceManager : EnsinaRunnerController
 
         var testeJao = Math.Round(DistanceCount);
 
-        DistanceText.text = "Distância: " + testeJao;
+        DistanceText.text = "Distância: " + testeJao + " Mts";
 
         pointsPerSecondsLast = (int)testeJao;
     }

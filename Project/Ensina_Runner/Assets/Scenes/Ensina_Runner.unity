@@ -296,7 +296,7 @@ GameObject:
   m_Layer: 0
   m_Name: Collector
   m_TagString: Collector
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -964,6 +964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
     type: 3}
+  myDB: {fileID: 519420033}
 --- !u!1 &1869200148
 GameObject:
   m_ObjectHideFlags: 0

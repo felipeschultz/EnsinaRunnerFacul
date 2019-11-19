@@ -34,7 +34,10 @@ public class ToggleController : EnsinaRunnerController
             // *************************************************************************************************************************
             try
             {
-                myDB.ExecuteQuery($"INSERT INTO Player (ID_Player, Nickname, Distancia_Percorrida, Respostas_Corretas) VALUES (null, '{MainMenu.nickname}', {DistanceManager.pointsPerSecondsLast}, {AnswerCorrectManager.answerCorrectCountStatic})");
+                string query =
+                    $"INSERT INTO Player(ID_Player, Nickname, Distancia_Percorrida, Respostas_Corretas) VALUES(null, '{MainMenu.nickname}', {DistanceManager.pointsPerSecondsLast}, {AnswerCorrectManager.answerCorrectCountStatic})";
+
+                myDB.ExecuteQuery(query);
 
                 Debug.Log("DISTANCIA: " + DistanceManager.pointsPerSecondsLast);
                 Debug.Log("PERGUNTAS CORRETAS: " + AnswerCorrectManager.answerCorrectCountStatic);

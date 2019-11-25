@@ -9,6 +9,8 @@ public class GameController : EnsinaRunnerController
     public int selectedTheme;
     public Dictionary<int, string> questionList;
 
+    public Transform spawnMin, spawnMax;
+
     public void Awake()
     {
         selectedTheme = SelectTheme.themeValue;

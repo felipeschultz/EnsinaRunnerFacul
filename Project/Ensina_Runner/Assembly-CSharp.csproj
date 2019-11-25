@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\AnswerController.cs" />
     <Compile Include="Assets\Scripts\AnswerCorrectManager.cs" />
     <Compile Include="Assets\Scripts\BackgroundScroll.cs" />
+    <Compile Include="Assets\Scripts\CountdownQuestions.cs" />
     <Compile Include="Assets\Scripts\DatabaseConnection.cs" />
     <Compile Include="Assets\Scripts\DistanceManager.cs" />
     <Compile Include="Assets\Scripts\EnsinaRunnerController.cs" />
@@ -75,9 +76,11 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PostDeathMenu.cs" />
+    <Compile Include="Assets\Scripts\PowerUpsController.cs" />
     <Compile Include="Assets\Scripts\RankingController.cs" />
     <Compile Include="Assets\Scripts\RowController.cs" />
     <Compile Include="Assets\Scripts\SelectTheme.cs" />
+    <Compile Include="Assets\Scripts\SpawnIcon.cs" />
     <Compile Include="Assets\Scripts\ToggleController.cs" />
     <Compile Include="Assets\SSTools\Scripts\SSTools.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

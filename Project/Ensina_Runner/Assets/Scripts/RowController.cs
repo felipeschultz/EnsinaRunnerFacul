@@ -7,7 +7,7 @@ public class RowController : MonoBehaviour
     public Text distanceText;
     public Text correctAnswerText;
 
-    private Vector3 canvasDistance = new Vector3(0, -59, 0);
+    private Vector3 canvasDistance = new Vector3(0, -54, 0);
 
     public Transform rowTransform;
 

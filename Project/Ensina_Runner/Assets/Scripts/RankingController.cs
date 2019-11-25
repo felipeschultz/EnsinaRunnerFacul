@@ -6,26 +6,27 @@ public class RankingController : EnsinaRunnerController
     public List<Player> players;
     public GameObject rankingPrefab;
     public Transform canvasTransform;
-
-    public Transform canvas1;
-    public Transform canvas2;
+    public DatabaseConnection myDB;
 
     // Start is called before the first frame update
     void Start()
     {
         SelectPlayers();
         UpdateRanking();
-
-        Debug.Log(Vector2.Distance(canvas1.position, canvas2.position));
     }
 
     private void SelectPlayers()
     {
         players = new List<Player>();
-        players.Add(new Player() { CorrectAnswers = 0, Distance = 999, Nickname = "Lobinho" });
-        players.Add(new Player() { CorrectAnswers = 1, Distance = 1, Nickname = "Lhaminha" });
-        players.Add(new Player() { CorrectAnswers = 2, Distance = 2, Nickname = "Moikinha" });
-        players.Add(new Player() { CorrectAnswers = 3, Distance = 3, Nickname = "Joycinha" });
+
+        string query = "SELECT * FROM [Player] ORDER BY [Respostas_Corretas] DESC, [Distancia_Percorrida] DESC LIMIT 10";
+
+        var teste = myDB.ExecuteQuery(query);
+
+        while (teste.Read())
+        {
+            players.Add(new Player() { Nickname = teste.GetString(1), Distance = teste.GetInt32(2), CorrectAnswers = teste.GetInt32(3) });
+        }
     }
 
     private void UpdateRanking()

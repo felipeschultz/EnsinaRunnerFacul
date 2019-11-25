@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PostDeathMenu : EnsinaRunnerController
 {
     public string startGameLevel;
+    public string startRankingLevel;
 
     public void RestartGame()
     {
@@ -15,6 +16,7 @@ public class PostDeathMenu : EnsinaRunnerController
 
     public void RankingGame()
     {
+        SceneManager.LoadScene(startRankingLevel);
     }
 
     public void QuitGame()

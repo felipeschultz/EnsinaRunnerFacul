@@ -1,4 +1,6 @@
-﻿using System.Threading;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class CountdownQuestions : EnsinaRunnerController
@@ -6,18 +8,27 @@ public class CountdownQuestions : EnsinaRunnerController
     public Text countdownQuestionText;
     public int countdownTimer;
 
-    void Update()
+    void Start()
     {
-        //TestTimer();
+        Debug.Log("Vou Iniciar!");
+        StartCoroutine(TimerPrefab());
     }
 
-    public void TestTimer()
+    IEnumerator TimerPrefab()
     {
-        for (int i = countdownTimer; i >= 0; i--)
+        Debug.Log("Entrou na Corotine");
+        yield return new WaitForSecondsRealtime(1);
+        Debug.Log("Sai da Corotine!");
+        countdownQuestionText.text = (Convert.ToInt32(countdownQuestionText.text) -1).ToString();
+
+        if (countdownQuestionText.text == "0")
         {
-            countdownQuestionText.text = countdownTimer.ToString();
-            Thread.Sleep(1000);
-            countdownTimer--;
+            Debug.Log("Morre Mizera!");
+        }
+        else
+        {
+            Debug.Log(countdownQuestionText.text);
+            StartCoroutine(TimerPrefab());
         }
     }
 }

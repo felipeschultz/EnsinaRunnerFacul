@@ -34,7 +34,7 @@ public class PlayerController : EnsinaRunnerController
         myAnimator.SetBool("Grounded", grounded);
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Spawn Icon")
         {

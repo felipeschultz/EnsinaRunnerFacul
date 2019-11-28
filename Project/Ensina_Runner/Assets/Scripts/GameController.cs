@@ -8,6 +8,7 @@ public class GameController : EnsinaRunnerController
     public GameObject questionPrefab;
     public int selectedTheme;
     public Dictionary<int, string> questionList;
+    public CountdownQuestions cq;
 
     public Transform spawnMin, spawnMax;
 
@@ -33,18 +34,19 @@ public class GameController : EnsinaRunnerController
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            AskQuestion();
-        }
-    }
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.R))
+    //    {
+    //        AskQuestion();
+    //    }
+    //}
 
     public void AskQuestion()
     {
         GameObject pergunta = GameObject.Instantiate(questionPrefab);
+
         var retornoDaLista = Random.Range(0, questionList.Keys.Count);
         var keyRandom = questionList.Keys.ToList()[retornoDaLista];
         var perguntaAtual = questionList[keyRandom];

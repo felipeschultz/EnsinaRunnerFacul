@@ -146,7 +146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -252.6, y: -20.25}
+  m_AnchoredPosition: {x: -261, y: -20.25}
   m_SizeDelta: {x: 494.4, y: 40.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28447343
@@ -436,6 +436,7 @@ MonoBehaviour:
   questionPrefab: {fileID: 7824455559367696530, guid: 2827e84af244f334990493682e63ca49,
     type: 3}
   selectedTheme: 0
+  cq: {fileID: 0}
   spawnMin: {fileID: 1264700004}
   spawnMax: {fileID: 625370197}
 --- !u!20 &519420031
@@ -547,7 +548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625370196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.26, y: 0.15, z: 2.1289062}
+  m_LocalPosition: {x: 8.26, y: 2.92, z: 2.1289062}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -627,7 +628,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264700003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.68, y: -1.87, z: 2.1289062}
+  m_LocalPosition: {x: 1.68, y: -1.28, z: 2.1289062}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -646,7 +647,7 @@ GameObject:
   m_Layer: 0
   m_Name: ObstacleSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -818,7 +819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 301, y: -20.25}
+  m_AnchoredPosition: {x: 311.3, y: -20.25}
   m_SizeDelta: {x: 602.4, y: 40.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611323358
@@ -1030,6 +1031,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
+  gc: {fileID: 519420030}
 --- !u!114 &1816908482
 MonoBehaviour:
   m_ObjectHideFlags: 0

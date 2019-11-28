@@ -8,6 +8,7 @@ public class PlayerController : EnsinaRunnerController
     public LayerMask whatIsGround;
     private Collider2D myCollider;
     private Animator myAnimator;
+    public GameController gc;
 
     // Start is called before the first frame update
     void Start()
@@ -31,5 +32,14 @@ public class PlayerController : EnsinaRunnerController
         }
 
         myAnimator.SetBool("Grounded", grounded);
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Spawn Icon")
+        {
+            Destroy(GameObject.Find("apple(Clone)"));
+            gc.AskQuestion();
+        }
     }
 }

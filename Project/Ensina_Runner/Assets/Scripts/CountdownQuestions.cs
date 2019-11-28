@@ -1,13 +1,11 @@
-﻿using System.Threading.Tasks;
-using UnityEngine;
+﻿using System.Threading;
 using UnityEngine.UI;
 
-public class CountdownQuestions : MonoBehaviour
+public class CountdownQuestions : EnsinaRunnerController
 {
     public Text countdownQuestionText;
     public int countdownTimer;
 
-    // Update is called once per frame
     void Update()
     {
         //TestTimer();
@@ -18,9 +16,7 @@ public class CountdownQuestions : MonoBehaviour
         for (int i = countdownTimer; i >= 0; i--)
         {
             countdownQuestionText.text = countdownTimer.ToString();
-
-            Task.Delay(1000);
-
+            Thread.Sleep(1000);
             countdownTimer--;
         }
     }

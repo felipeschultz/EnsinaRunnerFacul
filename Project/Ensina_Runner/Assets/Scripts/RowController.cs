@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class RowController : MonoBehaviour
+public class RowController : EnsinaRunnerController
 {
     public Text nickNameText;
     public Text distanceText;

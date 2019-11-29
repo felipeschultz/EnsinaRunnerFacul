@@ -18,21 +18,21 @@ public class MainMenu : EnsinaRunnerController
     // Método para o Botão <Start>
     public void StartGame()
     {
-        //nickname = inputNickname.text;
+        nickname = inputNickname.text;
 
-        //if (string.IsNullOrEmpty(inputNickname.text))
-        //{
-        //    SSTools.ShowMessage("Verifique o Nickname!", SSTools.Position.bottom, SSTools.Time.twoSecond);
+        if (string.IsNullOrEmpty(inputNickname.text))
+        {
+            SSTools.ShowMessage("Verifique o Nickname!", SSTools.Position.bottom, SSTools.Time.twoSecond);
 
-        //    return;
-        //}
-        //if (SelectTheme.themeValue == 0)
-        //{
-        //    SSTools.ShowMessage("Selecione um Tema!", SSTools.Position.bottom, SSTools.Time.twoSecond);
+            return;
+        }
+        if (SelectTheme.themeValue == 0)
+        {
+            SSTools.ShowMessage("Selecione um Tema!", SSTools.Position.bottom, SSTools.Time.twoSecond);
 
-        //    return;
-        //}
-        //else
+            return;
+        }
+        else
         {
             SceneManager.LoadScene(startGameLevel);
         }

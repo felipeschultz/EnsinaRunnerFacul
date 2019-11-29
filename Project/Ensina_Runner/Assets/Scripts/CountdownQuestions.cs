@@ -7,6 +7,8 @@ public class CountdownQuestions : EnsinaRunnerController
 {
     public Text countdownQuestionText;
     public int countdownTimer;
+    public GameObject postDeathPrefabs;
+    public DatabaseConnection myDB;
 
     void Start()
     {
@@ -23,7 +25,30 @@ public class CountdownQuestions : EnsinaRunnerController
 
         if (countdownQuestionText.text == "0")
         {
-            Debug.Log("Morre Mizera!");
+            Destroy(GameObject.Find("Perguntas(Clone)"));
+            GameObject postDeath = GameObject.Instantiate(postDeathPrefabs);
+
+            // *************************************************************************************************************************
+            // 
+            // MELHORAR OS INSERTS NO BANCO E IMPLEMENTAR UM UPDATE JUNTO PARA ATUALIZAR OS PONTOS CASO FOR MAIOR QUE A JOGADA ANTERIOR.
+            //
+            // *************************************************************************************************************************
+            try
+            {
+                string query =
+                    $"INSERT INTO Player(ID_Player, Nickname, Distancia_Percorrida, Respostas_Corretas) VALUES(null, '{MainMenu.nickname}', {DistanceManager.pointsPerSecondsLast}, {AnswerCorrectManager.answerCorrectCountStatic})";
+
+                myDB.ExecuteQuery(query);
+
+                Debug.Log("DISTANCIA: " + DistanceManager.pointsPerSecondsLast);
+                Debug.Log("PERGUNTAS CORRETAS: " + AnswerCorrectManager.answerCorrectCountStatic);
+                Debug.Log("NICKNAME: " + MainMenu.nickname);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
         else
         {

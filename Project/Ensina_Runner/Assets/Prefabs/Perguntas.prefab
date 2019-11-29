@@ -1150,6 +1150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdownQuestionText: {fileID: 1488873429}
   countdownTimer: 10
+  postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
+    type: 3}
+  myDB: {fileID: 1203041924}
 --- !u!1 &7824455559747969187
 GameObject:
   m_ObjectHideFlags: 0

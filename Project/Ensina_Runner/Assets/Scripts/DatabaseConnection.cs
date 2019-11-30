@@ -13,7 +13,7 @@ public class DatabaseConnection : EnsinaRunnerController
 
     public void Awake()
     {
-        dbFile = "URI=file:" + Application.dataPath + "/Database/EnsinaRunner.db";
+        dbFile = "URI=file:" + Application.dataPath + "/StreamingAssets/EnsinaRunner.db";
         ConnectionDB();
     }
 

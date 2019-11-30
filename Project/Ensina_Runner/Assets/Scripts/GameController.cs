@@ -21,12 +21,7 @@ public class GameController : EnsinaRunnerController
     // Start is called before the first frame update
     void Start()
     {
-        if (selectedTheme <= 0)
-        {
-            selectedTheme = 2;
-        }
-
-        var teste = myDB.ExecuteQuery("SELECT * FROM Perguntas WHERE FK_ID_Temas = " + selectedTheme);
+        var teste = myDB.ExecuteQuery("SELECT * FROM [Perguntas] WHERE [FK_ID_Temas] = " + selectedTheme);
 
         while (teste.Read())
         {
@@ -34,7 +29,9 @@ public class GameController : EnsinaRunnerController
         }
     }
 
-    //// Update is called once per frame
+    #region Teste
+
+    // Update is called once per frame
     //void Update()
     //{
     //    if (Input.GetKeyDown(KeyCode.R))
@@ -42,6 +39,8 @@ public class GameController : EnsinaRunnerController
     //        AskQuestion();
     //    }
     //}
+
+    #endregion
 
     public void AskQuestion()
     {
@@ -56,7 +55,7 @@ public class GameController : EnsinaRunnerController
         var perguntaController = pergunta.GetComponent<AnswerController>();
         perguntaController.UpdateTextQuestion(perguntaAtual);
 
-        var query = myDB.ExecuteQuery("SELECT * FROM Respostas WHERE FK_ID_Perguntas = " + keyRandom);
+        var query = myDB.ExecuteQuery("SELECT * FROM [Respostas] WHERE [FK_ID_Perguntas] = " + keyRandom);
 
         int index = 0;
 

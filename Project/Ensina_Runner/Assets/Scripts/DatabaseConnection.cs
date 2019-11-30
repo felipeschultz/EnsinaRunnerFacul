@@ -8,32 +8,38 @@ public class DatabaseConnection : EnsinaRunnerController
 {
     private IDbConnection connection;
     private IDbCommand command;
-    //private IDataReader reader;
-
+    private readonly string dbName = "EnsinaRunner.db";
     private string dbFile;
 
     public void Awake()
     {
-        #if UNITY_EDITOR
-        if (Application.platform != RuntimePlatform.Android)
+        try
         {
-            dbFile = "URI=file:" + Application.dataPath + "/StreamingAssets/EnsinaRunner.db";
-        }
-        #endif
-        else
-        {
-            dbFile = Application.persistentDataPath + "/" + "EnsinaRunner.db";
-
-            if (!File.Exists(dbFile))
+            if (Application.platform != RuntimePlatform.Android)
             {
-                Debug.LogWarning("File \"" + dbFile + "\" does not exist. Attempting to create from \"" +
-                                 Application.dataPath + "!/assets/" + "EnsinaRunner.db");
-
-                WWW load = new WWW("jar:file://" + Application.dataPath + "!/assets/" + "EnsinaRunner.db");
-                while (!load.isDone) { }
-
-                File.WriteAllBytes(dbFile, load.bytes);
+                dbFile = Application.dataPath + "/StreamingAssets/" + dbName;
             }
+            else
+            {
+                dbFile = Application.persistentDataPath + "/" + dbName;
+
+                if (!File.Exists(dbFile))
+                {
+                    Debug.LogWarning("File \"" + dbFile + "\" does not exist. Attempting to create from \"" +
+                                     Application.dataPath + "!/assets/" + dbName);
+                    
+                    WWW load = new WWW("jar:file://" + Application.dataPath + "!/assets/" + dbName);
+
+                    while (!load.isDone) { }
+
+                    File.WriteAllBytes(dbFile, load.bytes);
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
         }
 
         ConnectionDB();
@@ -44,7 +50,7 @@ public class DatabaseConnection : EnsinaRunnerController
     {
         try
         {
-            connection = new SqliteConnection(dbFile);
+            connection = new SqliteConnection("URI=file:" + dbFile);
             command = connection.CreateCommand();
             connection.Open();
         }

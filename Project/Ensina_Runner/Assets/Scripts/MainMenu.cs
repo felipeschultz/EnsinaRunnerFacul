@@ -35,6 +35,9 @@ public class MainMenu : EnsinaRunnerController
         else
         {
             SceneManager.LoadScene(startGameLevel);
+            AnswerController.ResumeGame();
+            AnswerCorrectManager.answerCorrectCountStatic = 0;
+            DistanceManager.pointsPerSecondsLast = 0;
         }
     }
 

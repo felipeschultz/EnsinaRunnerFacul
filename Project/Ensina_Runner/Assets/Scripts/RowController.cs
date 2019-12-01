@@ -7,7 +7,7 @@ public class RowController : EnsinaRunnerController
     public Text distanceText;
     public Text correctAnswerText;
 
-    private Vector3 canvasDistance = new Vector3(0, -54, 0);
+    private Vector3 canvasDistance = new Vector3(0, -48, 0);
 
     public Transform rowTransform;
 

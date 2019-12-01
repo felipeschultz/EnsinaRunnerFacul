@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9508465, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -342,6 +342,7 @@ MonoBehaviour:
   postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
     type: 3}
   myDB: {fileID: 1203041924}
+  verifyNicks: []
 --- !u!1 &1810397395712300489
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +457,7 @@ MonoBehaviour:
   postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
     type: 3}
   myDB: {fileID: 1203041924}
+  verifyNicks: []
 --- !u!1 &2220964283792956913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,3 +1650,4 @@ MonoBehaviour:
   postDeathPrefabs: {fileID: 352539964131575159, guid: a371ec430b733d24282b8a4bca197c0d,
     type: 3}
   myDB: {fileID: 1203041924}
+  verifyNicks: []

@@ -143,10 +143,50 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8804801908608979546, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804801908608979546, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804801908608979546, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804801908608979546, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768680598305845246, guid: d0b0019d462a34240ac10479587b068b,
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768680598305845246, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768680598305845246, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768680598305845246, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768680598305845246, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4243348461873650528, guid: d0b0019d462a34240ac10479587b068b,
         type: 3}
@@ -266,6 +306,26 @@ PrefabInstance:
     - target: {fileID: 893999311099779799, guid: d0b0019d462a34240ac10479587b068b,
         type: 3}
       propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 893999311099779799, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 893999311099779799, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 893999311099779799, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 893999311099779799, guid: d0b0019d462a34240ac10479587b068b,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8153568362317386821, guid: d0b0019d462a34240ac10479587b068b,

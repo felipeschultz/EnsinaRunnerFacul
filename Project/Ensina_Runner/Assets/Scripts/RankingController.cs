@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RankingController : EnsinaRunnerController
 {
@@ -7,6 +8,7 @@ public class RankingController : EnsinaRunnerController
     public GameObject rankingPrefab;
     public Transform canvasTransform;
     public DatabaseConnection myDB;
+    private readonly string buttonMainMenu = "Main_Menu";
 
     // Start is called before the first frame update
     void Start()
@@ -36,5 +38,10 @@ public class RankingController : EnsinaRunnerController
             GameObject rankingRowLocal = GameObject.Instantiate(rankingPrefab);
             rankingRowLocal.GetComponent<RowController>().UpdatePlayer(players[i], i + 1);
         }
+    }
+
+    public void RankingSairButton()
+    {
+        SceneManager.LoadScene(buttonMainMenu);
     }
 }

@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/PC/Documents/GitHub/EnsinaRunnerFacul/Project/Ensina_Runner/Apk/EnsinaRunner_V006_Version_Final_4.apk
+C:/Users/PC/Documents/GitHub/EnsinaRunnerFacul/Project/Ensina_Runner/Apk/EnsinaRunner_V006_Version_Final_5.apk
 SceneListBegin?
 Assets/Scenes/Main_Menu.unity
 Assets/Scenes/Ensina_Runner.unity
@@ -126,7 +126,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 28b380f74f7e5dd8e01320eb81564082 Assembly-CSharp.dll:.RowController
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
-0c0f02ec7bdd15ee72f3f79c8dcf789a Assembly-CSharp.dll:.CountdownQuestions
+85920dce91cd84be4c614c651c5683de Assembly-CSharp.dll:.CountdownQuestions
 f7b196abaaa95d14052d8c06d780eb1b Assembly-CSharp.dll:.MainMenu
 52431fa40a908c50ec8f34771bcf8da5 Assembly-CSharp.dll:.RankingController
 31966a9014c7f58e136adb8c4a239146 Assembly-CSharp.dll:.SpawnIconMovement
@@ -174,7 +174,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 0e2399cb716cbd3023a178be9a58af02 Assembly-CSharp.dll:.PowerUpsController
 1dee0cecdb9571987598d19bba3da700 Assembly-CSharp.dll:.PostDeathMenu
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
-57b07753be38d2d5f86872e7be07ab82 Assembly-CSharp.dll:.ToggleController
+dd5ffe86e47e784a8ed421b2f99fbf84 Assembly-CSharp.dll:.ToggleController
 882779b66d519f6e15c2a2d6746a4952 Assembly-CSharp.dll:.DistanceManager
 588e287d7170a6ff6d7cd260b3e54302 Assembly-CSharp.dll:.PlayerController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SpawnIcon

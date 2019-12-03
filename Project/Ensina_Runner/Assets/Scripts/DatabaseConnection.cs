@@ -27,8 +27,10 @@ public class DatabaseConnection : EnsinaRunnerController
                 {
                     Debug.LogWarning("File \"" + dbFile + "\" does not exist. Attempting to create from \"" +
                                      Application.dataPath + "!/assets/" + dbName);
-                    
+
+                    #pragma warning disable CS0618 // O tipo ou membro é obsoleto
                     WWW load = new WWW("jar:file://" + Application.dataPath + "!/assets/" + dbName);
+                    #pragma warning restore CS0618 // O tipo ou membro é obsoleto
 
                     while (!load.isDone) { }
 

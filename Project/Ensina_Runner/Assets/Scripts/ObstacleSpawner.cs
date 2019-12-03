@@ -61,5 +61,4 @@ public class ObstacleSpawner : EnsinaRunnerController
 
         StartCoroutine(SpawnRandomObstacles());
     }
-
 }

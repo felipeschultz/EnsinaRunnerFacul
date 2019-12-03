@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\PowerUpsController.cs" />
     <Compile Include="Assets\Scripts\RankingController.cs" />
     <Compile Include="Assets\Scripts\RowController.cs" />
+    <Compile Include="Assets\Scripts\RulesGames.cs" />
     <Compile Include="Assets\Scripts\SelectTheme.cs" />
     <Compile Include="Assets\Scripts\SpawnIcon.cs" />
     <Compile Include="Assets\Scripts\SpawnIconMovement.cs" />
